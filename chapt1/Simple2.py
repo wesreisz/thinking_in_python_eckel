@@ -1,5 +1,6 @@
 __author__ = 'wesleyreisz'
 from SimpleClass import Simple
+
 class Simple2(Simple):
     def __init__(self, str):
         print "Inside Simple2 constructor"
@@ -15,9 +16,9 @@ class Simple2(Simple):
         # the overridden method:
         Simple.show(self)
 
-    class Different:
-        def show(self):
-            print "Not derived from Simple"
+class Different:
+    def show(self):
+        print "Not derived from Simple"
 
 if __name__ == "__main__":
     x = Simple2("Simple2 constructor argument")
